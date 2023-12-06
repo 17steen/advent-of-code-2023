@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="utils\utils.fs" />
+        <Compile Include="day01\solve.fs" />
+        <Content Include="day01\input">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Compile Include="day02\solve.fs" />
+        <Content Include="day02\input">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="day03\input">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Compile Include="day03\solve.fs" />
+        <Content Include="day04\input">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Compile Include="day04\solve.fs" />
+        <Content Include="day05\input">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Compile Include="day05\solve.fs" />
+        <Content Include="day06\input">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Compile Include="day06\solve.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Bolero" Version="0.23.52" />
+      <PackageReference Include="FSharp.Collections.ParallelSeq" Version="1.2.0" />
+      <PackageReference Include="FSharp.Text.RegexProvider" Version="2.1.0" />
+    </ItemGroup>
+
+</Project>
