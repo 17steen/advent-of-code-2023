@@ -117,7 +117,6 @@ let example =
 ...$.*....
 .664.598..
     """
-    |> Utils.lines
 
-assert (example |> part1 |> (=) 4361)
-assert (example |> part2 |> (=) 467835)
+assert (example |> Utils.lines |> part1 |> (=) 4361)
+assert (example |> Utils.lines |> part2 |> (=) 467835)

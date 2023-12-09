@@ -31,6 +31,8 @@
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
         <Compile Include="day06\solve.fs" />
+        <Compile Include="day08\solve.fs" />
+        <Compile Include="day09\solve.fs" />
     </ItemGroup>
 
     <ItemGroup>

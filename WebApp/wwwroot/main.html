@@ -1,11 +1,16 @@
 <section class="section">
     <h1 class="title">Advent of Code</h1>
     <label for="day-select">Selected day: </label>
-    <select id="day-select">
-        ${Days}
-    </select>
-    <textarea class="textarea" bind="${Input}"></textarea>
-    <button onclick="${Compute}">Compute</button>
+    <div class="select">
+        <select id="day-select" onchange="${DaySelected}">
+            ${Days}
+            <template id="DayOption">
+                <option selected="${Selected}" value="${Day}">Day ${Day}</option>
+            </template>
+        </select>
+    </div>
+    <textarea class="textarea" bind="${Input}" placeholder="${Placeholder}"></textarea>
+    <button class="button" onclick="${Compute}">Compute</button>
     <section class="section">
         ${Results}
     </section>

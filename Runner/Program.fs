@@ -1,10 +1,5 @@
 ﻿
-let example =
-    """
-Time:        56     97     77     93
-Distance:   499   2210   1097   1440
-
-    """
-let result = AdventOfCode2023.Days.Day06.part2 example
+let input = System.Console.In.ReadToEnd() |> _.Trim()
+let result = AdventOfCode2023.Days.Day08.solve input
 
 printfn "%A" result
