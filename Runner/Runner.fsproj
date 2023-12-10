@@ -8,6 +8,11 @@
     <ItemGroup>
         <Compile Include="Program.fs"/>
     </ItemGroup>
+    
+    <PropertyGroup>
+        <PublishAot>true</PublishAot>
+        <IsAotCompatible>true</IsAotCompatible>
+    </PropertyGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\AdventOfCode2023\AdventOfCode2023.fsproj" />
